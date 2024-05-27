@@ -1,6 +1,6 @@
-
-
-
+.nav-item a:hover{
+  color: darkgoldenrod;
+}
   /* footer */
   footer {
     text-align: center;
@@ -50,9 +50,8 @@ text-align: center;
 
 }
 :root {
-    --main-text-font: Arial, Helvetica, sans-serif;
-    
-    }
+    --main-text-font: Arial, Helvetica, sans-serif;  
+}
     
 *{
    margin: 0;
@@ -61,22 +60,20 @@ text-align: center;
     outline: none;  
 }
     
-    li {
-    list-style: none;
-    }
-    a{
-    
-    text-decoration: none;
-    }
-    .space-between {
-    justify-content: space-between;
-    }
-    .container {
-    max-width: 1200px;
-    margin: auto;
-    }
-.row{
-    display: flex;
-    flex-wrap: wrap;
+li {
+list-style: none;
 }
+a{
 
+text-decoration: none;
+}
+.space-between {
+justify-content: space-between;
+}
+.container {
+max-width: 1200px;
+margin: auto;
+}
+.navbar-brand{
+  padding: 15px;
+}
