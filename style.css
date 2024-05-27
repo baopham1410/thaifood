@@ -572,15 +572,6 @@ background-color:#fff;
 
 }
 
-
-
-
-
-
-
-
-
-
 .cart-top-item i {
 color:#dddddd;
 }
@@ -782,12 +773,7 @@ color: #333;
     font-size: 12px;
     }
    
-    
-
-    
-    
-    
-    .delivery-content-left label{
+.delivery-content-left label{
     font-family: var( --main-text-font);
     font-size: 12px;
     margin-bottom: 6px;
