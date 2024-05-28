@@ -19,43 +19,43 @@
     },
     {
         "image":"img/padthai.jpg",
-        "name":"Mama Tomyum",
+        "name":"Pad Thai",
         "price":"220.000",
         "des":"Mama Tomyum là món mì ăn liền kiểu Thái, kết hợp giữa vị cay nồng và chua đặc trưng của tomyum với sợi mì dai ngon. Món này thường chứa tôm, nấm, và các loại rau thơm, tạo nên hương vị đậm đà, hấp dẫn, lý tưởng cho những bữa ăn nhanh và tiện lợi."
     },
     {
         "image":"img/canhtomyum.jpg",
-        "name":"Mama Tomyum",
+        "name":"Canh Tomyum",
         "price":"220.000",
         "des":"Mama Tomyum là món mì ăn liền kiểu Thái, kết hợp giữa vị cay nồng và chua đặc trưng của tomyum với sợi mì dai ngon. Món này thường chứa tôm, nấm, và các loại rau thơm, tạo nên hương vị đậm đà, hấp dẫn, lý tưởng cho những bữa ăn nhanh và tiện lợi."
     },
     {
         "image":"img/chuoiphuhongbao.jpg",
-        "name":"Mama Tomyum",
+        "name":"Chuối Hồng Bào",
         "price":"220.000",
         "des":"Mama Tomyum là món mì ăn liền kiểu Thái, kết hợp giữa vị cay nồng và chua đặc trưng của tomyum với sợi mì dai ngon. Món này thường chứa tôm, nấm, và các loại rau thơm, tạo nên hương vị đậm đà, hấp dẫn, lý tưởng cho những bữa ăn nhanh và tiện lợi."
     },
     {
         "image":"img/comchienruoc.jpg",
-        "name":"Mama Tomyum",
+        "name":"Cơm Chiên Ruốc",
         "price":"220.000",
         "des":"Mama Tomyum là món mì ăn liền kiểu Thái, kết hợp giữa vị cay nồng và chua đặc trưng của tomyum với sợi mì dai ngon. Món này thường chứa tôm, nấm, và các loại rau thơm, tạo nên hương vị đậm đà, hấp dẫn, lý tưởng cho những bữa ăn nhanh và tiện lợi."
     },
     {
         "image":"img/comchientraithom.jpg",
-        "name":"Mama Tomyum",
+        "name":"Cơm Chiên Thơm",
         "price":"220.000",
         "des":"Mama Tomyum là món mì ăn liền kiểu Thái, kết hợp giữa vị cay nồng và chua đặc trưng của tomyum với sợi mì dai ngon. Món này thường chứa tôm, nấm, và các loại rau thơm, tạo nên hương vị đậm đà, hấp dẫn, lý tưởng cho những bữa ăn nhanh và tiện lợi."
     },
     {
         "image":"img/goi sontam.jpg",
-        "name":"Mama Tomyum",
+        "name":"Gỏi SonTam",
         "price":"220.000",
         "des":"Mama Tomyum là món mì ăn liền kiểu Thái, kết hợp giữa vị cay nồng và chua đặc trưng của tomyum với sợi mì dai ngon. Món này thường chứa tôm, nấm, và các loại rau thơm, tạo nên hương vị đậm đà, hấp dẫn, lý tưởng cho những bữa ăn nhanh và tiện lợi."
     },
     {
         "image":"img/xoixoai.jpg",
-        "name":"Mama Tomyum",
+        "name":"Xôi Xoài",
         "price":"220.000",
         "des":"Mama Tomyum là món mì ăn liền kiểu Thái, kết hợp giữa vị cay nồng và chua đặc trưng của tomyum với sợi mì dai ngon. Món này thường chứa tôm, nấm, và các loại rau thơm, tạo nên hương vị đậm đà, hấp dẫn, lý tưởng cho những bữa ăn nhanh và tiện lợi."
     }
