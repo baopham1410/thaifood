@@ -1,0 +1,63 @@
+:root {
+    --main-text-font: Arial, Helvetica, sans-serif;  
+}
+*{
+    font-family: var(--main-text-font);
+}
+.dish{
+    border: 1px solid darkgoldenrod;
+    border-radius: 5px;
+    padding: 5px 2px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+.dish:hover{
+    transform: translateY(-10px);
+}
+.dish .img-contain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dish .img-contain a{
+    display: flex;
+    justify-content: center;
+}
+.dish img{
+    width: 90%;
+    object-fit: contain;
+    border-radius: 5px;
+}
+.dish .detail{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+.dish .add-cart-contain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.add-cart-contain button{
+    border-radius: 4px;
+    border:1px solid darkgoldenrod;
+    height: 40px;
+    color: darkgoldenrod;
+    font-weight: 400;
+    padding: 1px 2px;
+    font-size: 1.2rem;
+    background-color: white;
+}
+.add-cart-contain button:hover{
+    cursor: pointer;
+    background-color: darkgoldenrod;
+    color: white;
+}
+.detail .name a, .dish .price{
+    color: rgba(0,0,0,0.5);
+    font-size: 1rem;
+    font-weight: 600;
+}
+.detail .name a:hover, .dish .price:hover{
+    color: darkgoldenrod;
+}
