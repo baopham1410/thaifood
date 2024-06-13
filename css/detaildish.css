@@ -16,7 +16,6 @@
     justify-content: flex-start;
     height: 100%;
     gap:5px;
-    padding: 30px 0 0 0;
 }
 .name-contain, .des-contain, .price-contain{
     display: flex;
@@ -26,10 +25,10 @@
     padding: 5px;
     border-radius: 5px;
 }
-.des-contain .des-title{
+.des-contain .des-title,.name-contain .name-title, .price-contain .price-title{
     flex:1;
 }
-.des-contain .des{
+.des-contain .des,.name-contain .name, .price-contain .price{
     flex:3;
 }
 .addtocart-contain{
@@ -47,7 +46,7 @@
     font-size: 22px;
     background-color: white;
     border:1px solid green;
-    color: rgba(0,0,0,0.6)
+    color: rgba(0,0,0,0.6);
 }
 .add-cart-btn-contain .cart-add:hover{
     background-color: green;
@@ -80,6 +79,61 @@
 .quantity .decrease:hover, .quantity .increase:hover{
     color: white;
     cursor: pointer;
+    background-color: green;
+}
+.relate-dish-contain{
+    margin: 0 25px 25px 25px;
+    border-top: 1px solid rgba(0,0,0,0.3);
+}
+.relate-dish{
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+.relate-dish:hover{
+    border: 1px solid darkgoldenrod;
+}
+.relate-dish-title{
+    color: rgba(0,0,0,0.6);
+    margin-bottom: 10px;
+}
+.relate-dish a{
+    display: flex;
+    justify-content: center;
+}
+.relate-dish img{
+    width: 95%;
+    border-radius: 5px;
+}
+.relate-dish-contain .content-dish{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: rgba(0,0,0,0.6);
+    font-weight: 300;
+}
+.relate-dish-contain .content-dish a{
+    color: rgba(0,0,0,0.6);
+    font-weight: 300;
+}
+.relate-dish-contain .img-dish{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.add-cart-btn-relate-contain{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.add-cart-btn-relate-contain .cart-add{
+    border: 1px solid green;
+    border-radius: 5px;
+    background-color: white;
+    color: rgba(0,0,0,0.6);
+}
+.add-cart-btn-relate-contain .cart-add:hover{
+    color: white;
     background-color: green;
 }
 .evaluate-customer{

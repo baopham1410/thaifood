@@ -1,7 +1,38 @@
 let listDish=[];
-let cartBtn=document.querySelector('.cart-add');
+let cartBtn=document.querySelector('#detail-cart-add');
+let cartBtnRelate=document.querySelectorAll('#relate-cart-add');
 let increaseBtn=document.querySelector('.increase');
 let decreaseBtn=document.querySelector('.decrease');
+let imageRelate=document.querySelectorAll('.relate-dish .img-dish img');
+let nameRelate=document.querySelectorAll('.relate-dish .name');
+
+function addToCartRelate(event){ 
+    let product=event.target.closest('.relate-dish');
+    let cart=JSON.parse(localStorage.getItem('cart')) || [];
+    if(product){
+        var image=product.querySelector('img').getAttribute('src');
+        var name=product.querySelector('.name').innerText;
+        var price = parseFloat(product.querySelector('.price').innerText.replace(/[^0-9]/,''));
+
+        const existProduct=cart.findIndex(product=> product.name===name);
+        if(existProduct >=0){
+            cart[existProduct].quantity+=1;
+            cart[existProduct].subtotal=cart[existProduct].price*cart[existProduct].quantity;
+        }
+        else{
+            const newProduct={
+                image,
+                name,
+                price,
+                quantity: 1,
+                subtotal:price
+            };
+            cart.push(newProduct);
+        }
+    }
+    localStorage.setItem('cart', JSON.stringify(cart));
+    totalInCart();
+}
 
 function getDoan(){
     return fetch('json/monan.json').then(reponse=>reponse.json()).then(data=>{
@@ -37,7 +68,7 @@ function addToCart(event){
     if(product){
         var image=product.querySelector('img').getAttribute('src');
         var name=product.querySelector('.name').innerText;
-        var price = parseFloat(product.querySelector('.price').innerText.match(/\d+(\.\d+)?/)[0]);
+        var price = parseFloat(product.querySelector('.price').innerText.replace(/[^0-9]/,''));
 
         const existProduct=cart.findIndex(product=> product.name===name);
         if(existProduct >=0){
@@ -80,5 +111,28 @@ function increaseQuantity(event){
     number_text.textContent=number;
 }
 
+function seenDetailProduct(event){
+    event.stopPropagation();
+    let dish=event.target.closest('.relate-dish');
+    if(dish){
+        var name=dish.querySelector('.name').innerText;
+        var detail={
+            name:name
+        };
+    }
+    localStorage.setItem('detail', JSON.stringify(detail));
+}
+
 document.addEventListener('DOMContentLoaded', () => {
-    Promise.all([getDoan()]).then(showDetailProduct)});
+    Promise.all([getDoan()]).then(()=>{
+        showDetailProduct();
+        cartBtnRelate.forEach(btn=>{
+            btn.addEventListener('click', addToCartRelate);
+        });
+        imageRelate.forEach(img=>{
+            img.addEventListener('click', seenDetailProduct);
+        })
+        nameRelate.forEach(name=>{
+            name.addEventListener('click', seenDetailProduct);
+        })
+    })});
