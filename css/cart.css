@@ -101,7 +101,7 @@
 }
 .cart-product .quantity .decrease,.cart-product .quantity .increase{
     border-radius: 50%;
-    border: 1px solid green;
+    border: 1px solid darkgoldenrod;
     display: flex;
     align-items: center;
     padding: 2px 3px;
@@ -109,7 +109,7 @@
 .cart-product .quantity .decrease:hover,.cart-product .quantity .increase:hover{
     color: white;
     cursor: pointer;
-    background-color: green;
+    background-color: darkgoldenrod;
 }
 .cart-product .subtotal{
     display: flex;
@@ -161,11 +161,11 @@
     height: 45px;
     font-size: 20px;
     font-weight: 300;
-    border: 2px solid green;
-    color: green;
+    border: 2px solid darkgoldenrod;
+    color: darkgoldenrod;
 }
 .cart-collaterals .checkout:hover{
-    background-color: green;
+    background-color: darkgoldenrod;
     color: white;
 }
 .cart-product .remove-cart:hover{
@@ -191,6 +191,7 @@
     display: flex;
     border: 2px solid red;
     border-radius: 5px;
+    padding: 8px;
 }
 .alert-contain .alert-icon{
     color: red;

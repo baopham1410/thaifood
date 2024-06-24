@@ -4,10 +4,35 @@
 .image-contain{
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }
-.image-contain img{
-    width: 70%;
-    height: 80%;
+.image-contain ul{
+    padding: 0;
+}
+.image-main img{
+    width: 100%;
+    height: 500px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    padding: 15px;
+}
+.image-list{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+.image-list img{
+    width: 120px;
+    height: 120px;
+}
+.image-list .image-item{
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+.image-list .image-item:hover{
+    transform: scale(0.9);
+    cursor: pointer;
 }
 .product-info{
     display: flex;
@@ -44,12 +69,12 @@
     width: 80%;
     border-radius: 12px;
     background-color: white;
-    border:1px solid green;
+    border:1px solid darkgoldenrod;
     color: rgba(0,0,0,0.6);
     font-size: 1.3rem;
 }
 .add-cart-btn-contain .cart-add:hover{
-    background-color: green;
+    background-color: darkgoldenrod;
     color: white;
     transition: all .3 ease-in-out;
 }
@@ -71,7 +96,7 @@
 }
 .quantity .decrease, .quantity .increase{
     border-radius: 50%;
-    border: 1px solid green;
+    border: 1px solid darkgoldenrod;
     display: flex;
     align-items: center;
     padding: 2px 3px;
@@ -79,7 +104,7 @@
 .quantity .decrease:hover, .quantity .increase:hover{
     color: white;
     cursor: pointer;
-    background-color: green;
+    background-color: darkgoldenrod;
 }
 .relate-dish-contain{
     margin: 0 25px 25px 25px;
@@ -104,6 +129,9 @@
     width: 95%;
     border-radius: 5px;
 }
+.relate-dish img:hover{
+    transform: scale(0.9);
+}
 .relate-dish-contain .content-dish{
     display: flex;
     justify-content: center;
@@ -111,6 +139,13 @@
     flex-direction: column;
     color: rgba(0,0,0,0.6);
     font-weight: 300;
+    font-size: 1.1rem;
+}
+.content-dish .name:hover a{
+    color: darkgoldenrod;
+}
+.contain-dish .name a{
+    width: 100%;
 }
 .relate-dish-contain .content-dish a{
     color: rgba(0,0,0,0.6);
@@ -120,6 +155,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.relate-dish-contain .img-dish a{
+    width: 85%;
 }
 .add-cart-btn-relate-contain{
     display: flex;
@@ -147,7 +185,7 @@
 .card-evaluate{
     width: 90%;
     display: flex;
-    border: 1px solid green;
+    border: 1px solid darkgoldenrod;
     padding: 10px;
     border-radius: 5px;
     margin-bottom: 15px;
@@ -166,6 +204,13 @@
 }
 
 /* responsive */
+@media(max-width:1120px){
+    .add-cart-btn-relate-contain .cart-add{
+        height: 40px;
+        width: 90%;
+        font-size: 1rem;
+    }
+}
 @media(max-width:991px){
     .product-info{
         margin-bottom: 8px;
@@ -177,18 +222,22 @@
     .addtocart-contain{
         gap: 10px;
     }
+    .relate-dish-contain .img-dish img{
+        width: 100%;
+        height: 250px;
+    }
 }
 @media(max-width:770px){
     .add-cart-btn-contain{
         height: 50px;
     }
-    .image-contain img{
+    /* .image-contain img{
         width: 90%;
-    }
+    } */
     .add-cart-btn-contain .cart-add{
         border-radius: 12px;
         background-color: white;
-        border:1px solid green;
+        border:1px solid darkgoldenrod;
         color: rgba(0,0,0,0.6);
         width: 90%;
     }
@@ -201,15 +250,28 @@
     }
 }
 @media(max-width:575px){
-    .image-contain img{
-        width: 60%;
-    }
-    .relate-dish img{
-        width: 85%;
-        border-radius: 5px;
-        height: 70%;
-    }
     .add-cart-btn-relate-contain .cart-add{
         width: 80%;
+    }
+    .relate-dish{
+        display: flex;
+    }
+    .relate-dish-contain .img-dish{
+        height: 150px;
+    }
+    .relate-dish-contain .content-dish{
+        gap: 5px;
+    }
+    .relate-dish-contain .img-dish img{
+        width: 100%;
+        height: 150px;
+        object-fit: contain;
+    }
+    .info-dish{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-grow: 1;
+        gap: 15px;
     }
 }

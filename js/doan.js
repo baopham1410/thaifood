@@ -12,11 +12,13 @@ const addDoanToHTML=()=>{
             monan.classList.add('col-lg-3','col-md-4','col-sm-6');
             monan.innerHTML=`<div class="dish">
             <div class="img-contain"><a href="detaildish.html"><img src="${data.image}" alt=""></a></div>
+            <div class="info-dish">
             <div class="detail">
               <div class="name"><a href="detaildish.html">${data.name}</a></div>
               <div class="price">${data.price}đ</div>
             </div>
             <div class="add-cart-contain"><button id="add-cart">Thêm vào giỏ hàng <i class='bx bxs-cart-add'></i></button></div>
+            </div>
           </div>`;
           list_doan.appendChild(monan);
           monan.querySelector('#add-cart').addEventListener('click', addToCart);
