@@ -127,14 +127,14 @@
     justify-content: center;
 }
 .add-cart-btn-relate-contain .cart-add{
-    border: 1px solid green;
+    border: 1px solid darkgoldenrod;
     border-radius: 5px;
     background-color: white;
     color: rgba(0,0,0,0.6);
 }
 .add-cart-btn-relate-contain .cart-add:hover{
     color: white;
-    background-color: green;
+    background-color: darkgoldenrod;
 }
 .evaluate-customer{
     margin: 0 25px 25px 25px;

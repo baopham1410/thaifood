@@ -1,79 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-<style>
-    #testimonials-slider img {
-    border-radius: 50%;
-}
-img {
-    vertical-align: top;
-    max-width: 100%;
-    height: auto;
-    
-}
-*, *::before, *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <style>
 
-user agent stylesheet
-img {
-    overflow-clip-margin: content-box;
-    overflow: clip;
-}
-#testimonials-slider .content {
-    width: 695px;
-    text-align: center;
-    margin: 0 auto;
-}
-.swiper-container {
-    margin: 0 auto;
-    position: relative;
-    overflow: hidden;
-    list-style: none;
-    padding: 0;
-    z-index: 1;
-}
-.color-content, input, textarea, select {
-    color: #1b2024;
-    background-color: #fff;
-}
-body {
-    font-family: 'Roboto';
-}
-body {
-    font: 300 14px / 1.625 'Lora', serif;
-    cursor: default;
-    background-position: 50% 0;
-    background-attachment: fixed;
-    font-synthesis: none;
-    -webkit-font-smoothing: subpixel-antialiased;
-    overflow-x: hidden;
-}
-*, *::before, *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-*, *::before, *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-    
-</style>
+  </style>
 
 </head>
+
 <body>
   <div class="header">
     <div class="logo"><a href="trangchu.html"><img src="img/logo/logo-main.png" alt=""></a></div>
@@ -83,279 +29,241 @@ body {
       <div class="nav-item"><a href="tintuc.html">Tin tức</a></div>
       <div class="nav-item"><a href="lienhe.html">Liên hệ</a></div>
       <div class="search-contain">
-        <input type="text" name="search" id="" placeholder="Tìm kiếm" class="search-content">
+        <input type="text" name="search" id="" placeholder="Nhập tên món ăn" class="search-content">
         <button class="search-btn">Tìm kiếm</button>
       </div>
     </div>
-    <a href="cart.html"><div class="bx bx-cart" id="cart"><div class="quantity-cart">0</div></div></a>
+    <a href="cart.html">
+      <div class="bx bx-cart" id="cart">
+        <div class="quantity-cart">0</div>
+      </div>
+    </a>
     <div class="bx bx-menu" id="menubar"></div>
   </div>
-      <!-- Băng chuyền -->
-      <div id="carouselExampleFade" class="carousel slide carousel-fade">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="img/bangchuyen1.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="img/bangchuyen2.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="img/bangchuyen3.jpg" class="d-block w-100" alt="...">
-          </div>
-        </div>
+  <!-- Băng chuyền -->
+  <div id="carouselExampleFade" class="carousel slide carousel-fade">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/bangchuyen1.jpg" class="d-block w-100" alt="...">
       </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-        <!-- Món ăn nổi bật -->
-        <h3 style="text-align: center;padding: 25px;color: darkgoldenrod;font-family:Arima Madurai;border-bottom:1px solid ;">MÓN ĂN NỔI BẬT</h3>
-        <section class="shop" id="shop">
-<div class="album py-5 bg-body-tertiary">
-        <div class="container">
-    
-          <div class="row row-cols-2 row-cols-sm-3 row-cols-md-3 g-3">
-            <div class="card" style="width: 18rem;">
-                <img src="img/haisankhay.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text" style="text-align: center;color: darkgoldenrod;">Hải Sản Khay</p>
-                </div>
-              </div>
-              <div class="card" style="width: 18rem;">
-                <img src="img/hoadiemson.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text" style="text-align: center;color: darkgoldenrod;">Hỏa Diệm Sơn</p>
-                </div>
-              </div>
-              <div class="card" style="width: 18rem;">
-                <img src="img/mamatomyum.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text" style="text-align: center;color: darkgoldenrod;">Mama Tomyum</p>
-                </div>
-              </div>
-              <div class="card" style="width: 18rem;">
-                <img src="img/padthai.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text" style="text-align: center;color: darkgoldenrod;">Pad Thái</p>
-                </div>
-              </div>
+      <div class="carousel-item">
+        <img src="img/bangchuyen2.jpg" class="d-block w-100" alt="...">
       </div>
-      </div>
-
-        </section>
-      
-      
-      
-      <br>
-      <br>
-     <!-- băng chuyền dưới  -->
-     <div id="carouselExampleIndicators" class="carousel slide">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="img/bangchuyen4.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="img/bangchuyenduoi3.jpg" class="d-block w-100" alt="...">
-          </div>
-         
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-      <!-- nhận xét của khách hàng 
-      
-      <section id="testimonials-slider" class="section-block ">
-        <div class="center">
-    <div class="section-title v1">
-<h3 class="font-heading"> Nhận xét của thực khách</h3>		
-</div>													<div class="swiper-container">
-        <div class="swiper-wrapper">
-                      <div class="swiper-slide">
-  <div class="content">	
-          <img width="300" height="300" src="https://thethaicuisine.vn/wp-content/uploads/2020/01/cacf6035-8ebd-4302-a944-6ee85f1491d9-Mario_Van_Peebles_color_hs-300x300.jpg" class="attachment-cristiano_medium_image size-cristiano_medium_image wp-post-image" alt="" />						<blockquote ><p>Món ăn ngon và trang trí rất đẹp. Tôi đến Đà Nẵng lần đầu tiên và tôi rất vui vì được thưởng thức món ăn ở đây. Tôi sẽ quay lại nếu có dịp. Cảm ơn</p>
-</blockquote>
-  <h2 class="font-heading color-pr-tx">Mario Van Peebles &#8211; Đạo diễn, Diễn viên nổi tiếng người Mỹ</h2>	
-</div>
-</div>													<div class="swiper-slide">
-  <div class="content">	
-          <img width="300" height="300" src="https://thethaicuisine.vn/wp-content/uploads/2020/01/th1-1534497877-width640height960-1-300x300.jpg" class="attachment-cristiano_medium_image size-cristiano_medium_image wp-post-image" alt="" />						<blockquote ><p>Đồ ăn ở đây ngon, chuẩn vị Thái. Chị thích món cơm chiên trái dứa với cả canh tomyum. Nếu quay lại Đà Nẵng chị sẽ tiếp tục ghé.</p>
-</blockquote>
-  <h2 class="font-heading color-pr-tx">Mai Phương Thúy &#8211; Hoa Hậu Việt Nam 2006</h2>	
-</div>
-</div>													<div class="swiper-slide">
-  <div class="content">	
-          <img width="300" height="300" src="https://thethaicuisine.vn/wp-content/uploads/2019/12/53470241_2512164622131087_3953750376468971520_o-300x300.jpg" class="attachment-cristiano_medium_image size-cristiano_medium_image wp-post-image" alt="" />						<blockquote ><p>The Thai Cuisine là lựa chọn của mình đầu tiên khi đến Đà Nẵng. Là 1 NTK thì mình thường xuyên đi Thái và hương vị Thái như ăn sâu vào tâm trí của mình rồi. Nên khi thưởng thức món Thái ở đây mình thấy đúng vị lắm. Hi vọng The Thai Cuisine sẽ luôn giữ được hương vị như này và càng phát triển hơn nữa.</p>
-</blockquote>
-  <h2 class="font-heading color-pr-tx">Trần Thiện Khánh &#8211; Nhà Thiết Kế</h2>	
-</div>
-</div>													<div class="swiper-slide">
-  <div class="content">	
-          <img width="300" height="300" src="https://thethaicuisine.vn/wp-content/uploads/2019/12/76788289_557495825029087_3361855912590442496_n-300x300.jpg" class="attachment-cristiano_medium_image size-cristiano_medium_image wp-post-image" alt="" />						<blockquote ><p>Thuỷ đã thử rất nhiều quán Thái ở Đà Nẵng nhưng vẫn chưa thật sự hài lòng. Cho đến lúc được bạn rủ đi TTC, Thuỷ rất hào hứng vì đã tìm ra được “chân ái”. Món ăn gây nghiện thật sự, bị fall in love với gỏi somtam và pad thai luôn đây nàyyy !</p>
-</blockquote>
-  <h2 class="font-heading color-pr-tx">Nguyễn Như Thủy &#8211; Hoa Khôi Đà Nẵng</h2>	
-</div>
-</div>													<div class="swiper-slide">
-  <div class="content">	
-          <img width="300" height="300" src="https://thethaicuisine.vn/wp-content/uploads/2017/04/a-hau-kieu-loan-la-ai-tieu-su-du-nghiep-doi-tu-cua-kieu-loan-27c44fff-300x300.jpg" class="attachment-cristiano_medium_image size-cristiano_medium_image wp-post-image" alt="" />						<blockquote ><p>Món ăn Thái ngon nhất Loan từng được ăn, đây chắc chắn là lựa chọn của Loan khi đặt chân đến Đà Nẵng. Ụt ịt nào có tâm hồn ăn uống giống Loan ghì đến đây măm đồ ăn thức uống chuẩn Thái luôn nè.</p>
-</blockquote>
-  <h2 class="font-heading color-pr-tx">Nguyễn Hà Kiểu Loan &#8211;  Á hậu 1 Miss World Việt Nam, Top 10 Miss Grand 2019</h2>	
-</div>
-</div>													<div class="swiper-slide">
-  <div class="content">	
-          <img width="300" height="300" src="https://thethaicuisine.vn/wp-content/uploads/2017/04/basy-300x300.jpg" class="attachment-cristiano_medium_image size-cristiano_medium_image wp-post-image" alt="" />						<blockquote ><p>Anh được 1 người bạn ở Hà Nội giới thiệu nhà hàng mình nên anh đến. Món ăn okie, pad Thai ngon nhất.</p>
-</blockquote>
-  <h2 class="font-heading color-pr-tx">Quế Ngọc Hải &#8211; Tuyển thủ bóng đá Việt Nam</h2>	
-</div>
-</div>												</div>
-        <div class="nav">
-          <span class="prev fa fa-caret-left"></span>
-          <span class="next fa fa-caret-right"></span>	
-        </div>		
-      </div>
-        
-
-  </div>
-          
-</section> -->
-<div id="carouselExampleDark" class="carousel carousel-dark slide">
-  <div class="section-title v1">
-    <h3 style="text-align: center;padding: 25px;color: darkgoldenrod;font-family:Arima Madurai;border-bottom:1px solid ;">NHẬN XÉT CỦA THỰC KHÁCH </h3>
-    </div>	
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div class="carousel-inner" style="text-align: center; padding: 40px;">
-    <div class="carousel-item active" data-bs-interval="10000">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-<div class="content">	
- 
-<img width="300" height="300" style="border-radius: 50%;" src="https://thethaicuisine.vn/wp-content/uploads/2020/01/cacf6035-8ebd-4302-a944-6ee85f1491d9-Mario_Van_Peebles_color_hs-300x300.jpg" class="attachment-cristiano_medium_image size-cristiano_medium_image wp-post-image" alt="" />						<blockquote ><p>Món ăn ngon và trang trí rất đẹp. Tôi đến Đà Nẵng lần đầu tiên và tôi rất vui vì được thưởng thức món ăn ở đây. Tôi sẽ quay lại nếu có dịp. Cảm ơn</p>
-</blockquote>
-<h2 class="font-heading color-pr-tx" style="color: #d1a054 ; font-size: 16px;   font-family: 'Arima Madurai'">Mario Van Peebles &#8211; Đạo diễn, Diễn viên nổi tiếng người Mỹ</h2>	
-</div>
-         </div>	
-      </div>
-    </div>
-    <div class="carousel-item" data-bs-interval="2000">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-<div class="content">	
- 
-<img width="300" height="300" style="border-radius: 50%;" src="https://thethaicuisine.vn/wp-content/uploads/2020/01/th1-1534497877-width640height960-1-300x300.jpg" class="attachment-cristiano_medium_image size-cristiano_medium_image wp-post-image" alt="" />						<blockquote ><p>Đồ ăn ở đây ngon, chuẩn vị Thái. Chị thích món cơm chiên trái dứa với cả canh tomyum. Nếu quay lại Đà Nẵng chị sẽ tiếp tục ghé.</p>
-</blockquote>
-<h2 class="font-heading color-pr-tx" style="color: #d1a054 ; font-size: 16px;   font-family: 'Arima Madurai'">Mai Phương Thúy &#8211; Hoa Hậu Việt Nam 2006</h2>	
-</div>
-         </div>	
-      </div>
-    </div>
-    <div class="carousel-item">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-<div class="content">	
- 
-<img width="300" height="300" style="border-radius: 50%;" src="https://thethaicuisine.vn/wp-content/uploads/2019/12/53470241_2512164622131087_3953750376468971520_o-300x300.jpg" class="attachment-cristiano_medium_image size-cristiano_medium_image wp-post-image" alt="" />						<blockquote ><p>The Thai Cuisine là lựa chọn của mình đầu tiên khi đến Đà Nẵng. Là 1 NTK thì mình thường xuyên đi Thái và hương vị Thái như ăn sâu vào tâm trí của mình rồi. Nên khi thưởng thức món Thái ở đây mình thấy đúng vị lắm. Hi vọng The Thai Cuisine sẽ luôn giữ được hương vị như này và càng phát triển hơn nữa</p>
-</blockquote>
-<h2 class="font-heading color-pr-tx" style="color: #d1a054 ; font-size: 16px;   font-family: 'Arima Madurai'">Trần Thiện Khánh &#8211; Nhà Thiết Kế</h2>	
-</div>
-         </div>	
+      <div class="carousel-item">
+        <img src="img/bangchuyen3.jpg" class="d-block w-100" alt="...">
       </div>
     </div>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Previous</span>
   </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
   </button>
-</div>
-      <!-- cuoitrang -->
-      <!-- <footer> <div class="bg-dark text-secondary px-4 py-5 text-center">
-        <div class="py-5">
-            <div class="footer-top">
-                <li><a href=""><img src="images/vku.png" alt=""></a></li>
-                <li><a href=""></a>Liên hệ</li>
-                <li><a href=""></a> Tuyển dụng</1i>
-                <li><a href=""></a>Giới thiệu</li>
-                <li>
-                <a href="" class="fab fa-facebook-f"></a>
-                <a href="" class="fab fa-twitter"></a>
-                <a href="" class="fab fa-youtube"></a>
-                </li>
-                </div>
-                <div class="footer-center"> 
-                    <p>Công ty cổ phần Lao Food với số đăng ký kinh doanh: 0383435600 <br>
-                Địa chi đăng ký: 408 Đ.Mai Đăng Chơn-Đà Nẵng - 0243 205 2222 <br>
-                Đặt hàng online : <b>0383435600</b> .
-                </p></div>
-               
-                
-        </div>
-      </div></footer> -->
-      <footer class=" bg-dark pt-5">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-4 col-md-6">
-              <h2 class="title-footer">THAI FOOD</h2>
-              <p class="w-75">Khám phá hương vị đậm đà của ẩm thực Thái với những món ăn đa dạng và tươi ngon tại chúng tôi</p>
+
+  <div class="characteristic-container bg-light mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-6">
+          <div class="content-characteristic">
+            <h2 class="fw-bold">Không gian đặc biệt</h2>
+            <p style="font-size: medium;"> Được trang trí tỉ mỉ, sự kết hợp hài hòa giữa các phong cách và màu sắc tại THAI FOOD mang đến cho bạn không gian ấm áp và sang trọng, lý tưởng để thưởng thức ẩm thực Thai.Từ những chi tiết nhỏ nhất cho đến sự sắp xếp không gian, mỗi phần của THAI FOOD đều phản ánh sự tâm huyết và sự đam mê với nghệ thuật ẩm thực. Đến với chúng tôi, bạn sẽ không chỉ được thưởng thức những món ăn ngon và đa dạng, mà còn được trải nghiệm không gian độc đáo và phong cách, tạo ra những trải nghiệm ẩm thực đích thực. </p>
+            <div class="image-contain">
+              <img src="img/bg/bg_1.jpg" alt="">
             </div>
-            <div class="col-lg-4 col-md-6">
-              <h2 class="title-footer">Về chúng tôi</h2>
-              <ul>
-                <li><a href="trangchu.html">Trang chủ</a></li>
-                <li><a href="doan.html">Thực đơn</a></li>
-                <li><a href="tintuc.html">Tin tức</a></li>
-                <li><a href="lienhe.html">Liên hệ</a></li>
-              </ul>
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <h2 class="title-footer">Liên hệ</h2>
-              <ul>
-                <li class="info">
-                    <i class='bx bxs-envelope'></i> 
-                    <div class="content">
-                      <div class="item">huynv.23ite@vku.udn.vn</div>
-                      <div class="item">baopq.23ite@vku.udn.vn</div>
-                    </div>
-                </li>
-                <li class="info">
-                  <i class='bx bxs-phone' ></i>
-                  <div class="content">
-                    <div class="item">0328166890</div>
-                    <div class="item">0383435600</div>
-                  </div>
-                </li>
-                <li><i class="fa-solid fa-location-dot"></i> Công ty cổ phần Lao Food, 408 Đ.Mai Đăng Chơn-Đà Nẵng</li>
-              </ul>
+          </div>
+          <div class="content-characteristic">
+            <h2 class="fw-bold">Nguyên liệu tươi ngon</h2>
+            <p style="font-size: medium;"> Tại Thai Food, chúng tôi tự hào mang đến cho khách hàng những món ăn tuyệt vời được chế biến từ những nguyên liệu tươi ngon nhất.
+              Chúng tôi luôn đặc biệt quan tâm đến chất lượng của từng thành phần trong mỗi món ăn. Những nguyên liệu như rau thơm tươi mát, gia vị tự nhiên và các loại thực phẩm chất lượng cao được lựa chọn cẩn thận để đảm bảo mang lại hương vị đậm đà và hấp dẫn nhất cho mỗi món ăn.
+              Chúng tôi đặc biệt chú trọng đến việc sử dụng các nguyên liệu địa phương và theo mùa để giữ cho các món ăn luôn tươi mới và đáp ứng tiêu chuẩn vệ sinh an toàn thực phẩm cao nhất.
+              Hãy đến và trải nghiệm với chúng tôi, nơi mà chất lượng nguyên liệu tươi ngon và sự chuyên nghiệp trong việc chế biến sẽ mang đến cho bạn một trải nghiệm ẩm thực Thái đích thực!"</p>
+            <div class="image-contain">
+              <img src="img/bg/bg_ingredient.jpeg" alt="">
             </div>
           </div>
         </div>
-      </footer>
-      <div class="footer-bottom">
-        &copy; OIvymoda All rights reserved
+        <div class="col-lg-6 col-md-6">
+          <div class="content-characteristic">
+            <h2 class="fw-bold">Bầu không khí tuyệt vời</h2>
+            <p style="font-size: medium;">Chào mừng đến với không gian ấm áp và đầy cảm hứng tại THAI FOOD! Chúng tôi tự hào mang đến cho quý khách một trải nghiệm ẩm thực đặc biệt, nơi bạn có thể thư giãn và tận hưởng những bữa ăn ngon miệng cùng những khoảnh khắc đáng nhớ bên gia đình và bạn bè.
+
+            Tại THAI FOOD, không chỉ là nơi để thưởng thức những món ăn ngon và độc đáo, mà còn là không gian chân thật, nồng nhiệt và đầy sự chuyên nghiệp. Chúng tôi luôn chú trọng đến từng chi tiết nhỏ để mang đến cho quý khách trải nghiệm ẩm thực hoàn hảo nhất.
+            
+            Hãy đến và khám phá THAI FOOD ngay hôm nay để tận hưởng bầu không khí tuyệt vời và thưởng thức những món ăn tinh tế đặc biệt chỉ có tại đây. Chúng tôi sẵn sàng chào đón bạn với lòng nhiệt thành và niềm đam mê với ẩm thực!</p>
+            <div class="image-contain">
+              <img src="img/bg/bg_2.jpeg" alt="">
+            </div>
+          </div>
+        </div>
       </div>
-    <script src="js/navbar.js"></script>
-    <script src="js/totalInCart.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      <!-- <div class="row">
+        <div class="col-lg-6 col-md-6"></div>
+        <div class="col-lg-6 col-md-6"></div>
+      </div> -->
+    </div>
+  </div>
+  <br>
+  <br>
+  <!-- băng chuyền dưới  -->
+  <div id="carouselExampleIndicators" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/bangchuyen4.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="img/bangchuyenduoi3.jpg" class="d-block w-100" alt="...">
+      </div>
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <div id="carouselExampleDark" class="carousel carousel-dark slide">
+    <div class="section-title v1">
+      <h3
+        style="text-align: center;padding: 25px;color: darkgoldenrod;font-family:Arima Madurai;border-bottom:1px solid ;">
+        NHẬN XÉT CỦA THỰC KHÁCH </h3>
+    </div>
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner" style="text-align: center; padding: 40px;">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="content">
+
+              <img style="border-radius: 50%;" src="img/customer/customer1_MarioVanPeebles.jpg"
+                class="attachment-cristiano_medium_image size-cristiano_medium_image wp-post-image w-25 h-25" alt="" />
+              <blockquote>
+                <p>Món ăn ngon và trang trí rất đẹp. Tôi đến Đà Nẵng lần đầu tiên và tôi rất vui vì được thưởng thức món
+                  ăn ở đây. Tôi sẽ quay lại nếu có dịp. Cảm ơn</p>
+              </blockquote>
+              <h2 class="font-heading color-pr-tx"
+                style="color: #d1a054 ; font-size: 16px;   font-family: 'Arima Madurai'">Mario Van Peebles &#8211; Đạo
+                diễn, Diễn viên nổi tiếng người Mỹ</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="content">
+
+              <img style="border-radius: 50%;" src="img/customer/customer2_MaiPhuongThuy.jpg"
+                class="attachment-cristiano_medium_image size-cristiano_medium_image wp-post-image w-25 h-25" alt="" />
+              <blockquote>
+                <p>Đồ ăn ở đây ngon, chuẩn vị Thái. Chị thích món cơm chiên trái dứa với cả canh tomyum. Nếu quay lại Đà
+                  Nẵng chị sẽ tiếp tục ghé.</p>
+              </blockquote>
+              <h2 class="font-heading color-pr-tx"
+                style="color: #d1a054 ; font-size: 16px;   font-family: 'Arima Madurai'">Mai Phương Thúy &#8211; Hoa Hậu
+                Việt Nam 2006</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="content">
+
+              <img style="border-radius: 50%;" src="img/customer/customer3_TranThienKhanh.jpg"
+                class="attachment-cristiano_medium_image size-cristiano_medium_image wp-post-image w-25 h-25" alt="" />
+              <blockquote>
+                <p>The Thai Cuisine là lựa chọn của mình đầu tiên khi đến Đà Nẵng. Là 1 NTK thì mình thường xuyên đi
+                  Thái và hương vị Thái như ăn sâu vào tâm trí của mình rồi. Nên khi thưởng thức món Thái ở đây mình
+                  thấy đúng vị lắm. Hi vọng The Thai Cuisine sẽ luôn giữ được hương vị như này và càng phát triển hơn
+                  nữa</p>
+              </blockquote>
+              <h2 class="font-heading color-pr-tx"
+                style="color: #d1a054 ; font-size: 16px;   font-family: 'Arima Madurai'">Trần Thiện Khánh &#8211; Nhà
+                Thiết Kế</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <footer class=" bg-dark pt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+          <h2 class="title-footer">THAI FOOD</h2>
+          <p class="w-75">Khám phá hương vị đậm đà của ẩm thực Thái với những món ăn đa dạng và tươi ngon tại chúng tôi
+          </p>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <h2 class="title-footer">Về chúng tôi</h2>
+          <ul>
+            <li><a href="trangchu.html">Trang chủ</a></li>
+            <li><a href="doan.html">Thực đơn</a></li>
+            <li><a href="tintuc.html">Tin tức</a></li>
+            <li><a href="lienhe.html">Liên hệ</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <h2 class="title-footer">Liên hệ</h2>
+          <ul>
+            <li class="info">
+              <i class='bx bxs-envelope'></i>
+              <div class="content">
+                <div class="item">huynv.23ite@vku.udn.vn</div>
+                <div class="item">baopq.23ite@vku.udn.vn</div>
+              </div>
+            </li>
+            <li class="info">
+              <i class='bx bxs-phone'></i>
+              <div class="content">
+                <div class="item">0328166890</div>
+                <div class="item">0383435600</div>
+              </div>
+            </li>
+            <li><i class="fa-solid fa-location-dot"></i> Công ty cổ phần Lao Food, 408 Đ.Mai Đăng Chơn-Đà Nẵng</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="footer-bottom">
+    &copy; Copyrighted by Van Huy and Quoc Bao
+  </div>
+  <script src="js/navbar.js"></script>
+  <script src="js/totalInCart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 
 </body>
+
 </html>
