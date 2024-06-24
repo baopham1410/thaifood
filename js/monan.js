@@ -1,4 +1,4 @@
-[
+const monan=[
     {
         "image":"img/haisankhay.jpg",
         "name":"Hải Sản Khay",
@@ -60,3 +60,4 @@
         "des":"Mama Tomyum là món mì ăn liền kiểu Thái, kết hợp giữa vị cay nồng và chua đặc trưng của tomyum với sợi mì dai ngon. Món này thường chứa tôm, nấm, và các loại rau thơm, tạo nên hương vị đậm đà, hấp dẫn, lý tưởng cho những bữa ăn nhanh và tiện lợi."
     }
 ]
+    

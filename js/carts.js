@@ -1,4 +1,7 @@
 let listcart= document.querySelector('.list-cart');
+const totalPriceElement = document.querySelector('.totalprice');
+const shippingOptions = document.querySelectorAll('input[name="ship"]');
+
 
 function formatPrice(price) {
     // Chuyển số thành chuỗi có phân cách hàng nghìn
@@ -132,8 +135,23 @@ function displayCartCollateral(){
     totalprice.textContent=`${formatPrice(total)}đ`;
 }
 
-const totalPriceElement = document.querySelector('.totalprice');
-const shippingOptions = document.querySelectorAll('input[name="ship"]');
+let checkoutBtn=document.querySelector(".checkout");
+let alert=document.querySelector(".alert");
+let closeBtn=document.querySelector(".close");
+checkoutBtn.addEventListener("click", function(){
+    let cart=JSON.parse(localStorage.getItem('cart')) || [];
+    if(cart.length === 0){
+        alert.style.display="flex";
+        setTimeout(function(){
+            alert.style.display="none";
+        }, 3000);
+    }else{
+        window.location.href='dathang.html';
+    }
+});
+closeBtn.addEventListener("click", function(){
+    alert.style.display="none";
+})
 
 
 document.addEventListener('DOMContentLoaded', function(){
@@ -141,5 +159,5 @@ document.addEventListener('DOMContentLoaded', function(){
     displayCartCollateral();
     shippingOptions.forEach(option=>{
         option.addEventListener('change', displayCartCollateral);
-    })
+    });
 });

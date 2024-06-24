@@ -1,13 +1,12 @@
 .product-detail{
     margin-top: 80px;
-    margin-bottom: 50px;
 }
 .image-contain{
     display: flex;
     justify-content: center;
 }
 .image-contain img{
-    width: 50%;
+    width: 70%;
     height: 80%;
 }
 .product-info{
@@ -15,7 +14,8 @@
     flex-direction: column;
     justify-content: flex-start;
     height: 100%;
-    gap:5px;
+    gap:20px;
+    font-size: 1.3rem;
 }
 .name-contain, .des-contain, .price-contain{
     display: flex;
@@ -41,12 +41,12 @@
     flex: 1;
 }
 .add-cart-btn-contain .cart-add{
-    width: 50%;
+    width: 80%;
     border-radius: 12px;
-    font-size: 22px;
     background-color: white;
     border:1px solid green;
     color: rgba(0,0,0,0.6);
+    font-size: 1.3rem;
 }
 .add-cart-btn-contain .cart-add:hover{
     background-color: green;
@@ -62,11 +62,11 @@
 .quantity-contain .quantity-text{
     display: flex;
     justify-content: center;
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
 }
 .quantity-contain .quantity{
     display: flex;
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
     gap: 5px;
 }
 .quantity .decrease, .quantity .increase{
@@ -127,14 +127,14 @@
     justify-content: center;
 }
 .add-cart-btn-relate-contain .cart-add{
-    border: 1px solid green;
+    border: 1px solid darkgoldenrod;
     border-radius: 5px;
     background-color: white;
     color: rgba(0,0,0,0.6);
 }
 .add-cart-btn-relate-contain .cart-add:hover{
     color: white;
-    background-color: green;
+    background-color: darkgoldenrod;
 }
 .evaluate-customer{
     margin: 0 25px 25px 25px;
@@ -165,10 +165,14 @@
     color: rgb(225, 225, 14);
 }
 
-/* reponsive */
+/* responsive */
 @media(max-width:991px){
     .product-info{
         margin-bottom: 8px;
+        font-size: 1.1rem;
+    }
+    .add-cart-btn-contain .cart-add{
+        font-size: 1.1rem;
     }
     .addtocart-contain{
         gap: 10px;
@@ -178,20 +182,34 @@
     .add-cart-btn-contain{
         height: 50px;
     }
+    .image-contain img{
+        width: 90%;
+    }
     .add-cart-btn-contain .cart-add{
-        width: 40%;
         border-radius: 12px;
-        font-size: 18px;
         background-color: white;
         border:1px solid green;
-        color: rgba(0,0,0,0.6)
+        color: rgba(0,0,0,0.6);
+        width: 90%;
     }
     .quantity-contain .quantity-text{
         display: flex;
         justify-content: center;
-        font-size: 1.2rem;
     }
     .card-evaluate{
         height: auto;
+    }
+}
+@media(max-width:575px){
+    .image-contain img{
+        width: 60%;
+    }
+    .relate-dish img{
+        width: 85%;
+        border-radius: 5px;
+        height: 70%;
+    }
+    .add-cart-btn-relate-contain .cart-add{
+        width: 80%;
     }
 }

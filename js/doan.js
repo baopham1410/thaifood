@@ -2,13 +2,8 @@ let doan=[];
 let list_doan=document.querySelector('.list-doan');
 
 function getDoan(){
-    fetch("json/monan.json").then(reponse=>reponse.json()).then(data=>{
-        doan=data
-        addDoanToHTML();
-    })
+    return Promise.resolve(monan);
 };
-
-getDoan();
 
 const addDoanToHTML=()=>{
     if(doan.length>0){
@@ -73,3 +68,16 @@ function seenDetailProduct(event){
     localStorage.setItem('detail', JSON.stringify(detail));
 }
 
+async function getDoanAndRender() {
+    try {
+        const data = await getDoan();
+        doan = data;
+        addDoanToHTML(); 
+    } catch (error) {
+        console.error('Error fetching data:', error);
+    }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    getDoanAndRender();
+});

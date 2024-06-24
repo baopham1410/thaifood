@@ -35,9 +35,7 @@ function addToCartRelate(event){
 }
 
 function getDoan(){
-    return fetch('json/monan.json').then(reponse=>reponse.json()).then(data=>{
-        listDish=data
-    })
+    listDish=monan;
 }
 
 function showDetailProduct(){

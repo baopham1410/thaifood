@@ -5,14 +5,13 @@
     font-family: var(--main-text-font);
 }
 .dish{
-    border: 1px solid darkgoldenrod;
     border-radius: 5px;
     padding: 5px 2px;
-    cursor: pointer;
     margin-bottom: 15px;
 }
 .dish:hover{
     transform: translateY(-10px);
+    border: 1px solid darkgoldenrod;
 }
 .dish .img-contain{
     display: flex;
@@ -55,9 +54,28 @@
 }
 .detail .name a, .dish .price{
     color: rgba(0,0,0,0.5);
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 600;
+    text-wrap: nowrap;
 }
 .detail .name a:hover, .dish .price:hover{
     color: darkgoldenrod;
+}
+/* responsive */
+@media(max-width:575px){
+    .dish {
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+}
+@media(max-width:400px){
+    .dish {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+}
+@media(max-width:324px){
+    .add-cart-contain button{
+        font-size: 1rem;
+    }
 }
