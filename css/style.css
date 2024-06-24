@@ -107,7 +107,7 @@ body {
 
 .logo a {
   padding: 2px 5px;
-  color: black;
+  color: grey;
   font-weight: 500;
   font-size: 1.8rem;
 }
@@ -127,6 +127,10 @@ body {
   align-items: center;
 }
 
+.nav-item:nth-child(4){
+  margin-right: 15px;
+}
+
 .nav-item a {
   padding: 8px 12px;
   color: grey;
@@ -140,26 +144,27 @@ body {
 .search-contain {
   display: flex;
   gap: 10px;
-  font-size: 1.2rem;
+  font-size: 1rem;
+  box-sizing: border-box;
 }
 
 .search-contain .search-content {
   border-radius: 5px;
   border: 1px solid rgba(0, 0, 0, 0.3);
-  padding: 1px 3px;
+  padding: 0 0 0 10px;
   color: rgba(0, 0, 0, 0.7);
 }
 
 .search-contain .search-btn {
-  border: 1px solid green;
+  border: 1px solid darkgoldenrod;
   padding: 6px 10px;
   border-radius: 10px;
-  color: green;
+  color: darkgoldenrod;
   background-color: white;
 }
 
 .search-contain .search-btn:hover {
-  background-color: green;
+  background-color: darkgoldenrod;
   color: white;
 }
 
@@ -210,6 +215,24 @@ body {
 
 .content-characteristic{
   margin-top: 10px;
+}
+
+.w-20 {
+  width: 15%; 
+}
+
+.h-20 {
+  height: 15%; 
+}
+
+.comment-content{
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+.comment-content p{
+  width: 70%;
+  height: 55px;
 }
 
 /* footer */
@@ -344,4 +367,25 @@ a {
   .search-contain{
     font-size: 1rem;
   }
+  .w-20 {
+    width: 30%; 
+  }
+  
+  .h-20 {
+    height: 30%; 
+  }
 }
+/* .header{
+  background: rgba(255, 255, 255, 1);
+  background: rgba(148, 147, 146, 0.17);
+
+}
+.header.sticky{
+  background: rgba(255, 255, 255, 1);
+}
+.header.sticky .nav-item a{
+  color: black;
+}
+.header:hover{
+  background: rgba(255, 255, 255, 1);
+} */

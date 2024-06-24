@@ -1,5 +1,5 @@
 .order{
-    background-color: green;
+    background-color: darkgoldenrod;
     padding: 5px;
     width: 50%;
     color: white;
@@ -7,4 +7,7 @@
     border: none;
     height: 50px;
     font-size: 1.3em;
+}
+.order:hover{
+    opacity: 0.8;
 }

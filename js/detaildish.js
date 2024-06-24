@@ -49,8 +49,21 @@ function showDetailProduct(){
             dishInfo.querySelector('.name').textContent=dish.name;
             dishInfo.querySelector('.des').textContent=dish.des;
             dishInfo.querySelector('.price').textContent=dish.price+'đ';
-            const image_contain=document.querySelector('.image-contain img');
+            const image_contain=document.querySelector('.image-contain .image-main img');
             image_contain.setAttribute('src', dish.image);
+            const imageListItems = document.querySelectorAll('.image-list .image-item img');
+            const images = [dish.image, dish.image1, dish.image2];
+            images.forEach((imgSrc, index) => {
+                if (imageListItems[index]) {
+                    imageListItems[index].setAttribute('src', imgSrc);
+                }
+            });
+            const imageItems = document.querySelectorAll('.image-item img');
+            imageItems.forEach((img, index) => {
+                img.addEventListener('click', () => {
+                    image_contain.setAttribute('src', images[index]);
+                });
+            });
             cartBtn.addEventListener('click', addToCart);
             increaseBtn.addEventListener('click', increaseQuantity);
             decreaseBtn.addEventListener('click', decreaseQuantity);
